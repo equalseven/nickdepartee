@@ -48,9 +48,8 @@ export default function Page() {
         <Reveal as="div" className="grid">
           <span className="label">The through-line</span>
           <p>
-            In crowded markets, everyone looks the same on paper.{" "}
-            <span className="accent">Design and story</span> are how you stop competing on
-            price and start getting chosen — I&apos;ve built exactly that for two decades.
+            I help people become the{" "}
+            <span className="accent">obvious choice</span>.
           </p>
         </Reveal>
       </section>
