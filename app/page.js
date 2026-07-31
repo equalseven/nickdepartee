@@ -11,23 +11,27 @@ export default function Page() {
       </nav>
 
       {/* HERO */}
+      {/* HERO — the promise leads */}
       <header className="hero wrap">
+        <div className="eyebrow">
+          <span className="label">Nashville, TN</span>
+          <span className="label accent">Creative Direction &amp; Brand</span>
+        </div>
+        <p className="hero-statement">
+          I help people become the{" "}
+          <span className="accent">obvious choice</span>.
+        </p>
+      </header>
+
+      {/* INTRO — who I am (semantic h1 lives here for name SEO) */}
+      <section className="intro wrap">
         <div className="hero-grid">
           <div className="hero-copy">
-            <div className="eyebrow">
-              <span className="label">Nashville, TN</span>
-              <span className="label accent">Creative Direction &amp; Brand</span>
-            </div>
             <h1>
               <span className="nm">Nick de Partee,</span>
               <span className="title">Creative Director &amp; Brand Consultant</span>
             </h1>
             <p className="thesis">Brand and creative direction for people who win on trust.</p>
-            <div className="meta">
-              <div><span className="label">Founder</span><span className="v">Equal Seven Creative</span></div>
-              <div><span className="label">Co-Founder &amp; CMO</span><span className="v">AVVAY</span></div>
-              <div><span className="label">Background</span><span className="v">Musician · Designer · Builder</span></div>
-            </div>
           </div>
           <figure className="hero-photo">
             <Image
@@ -39,25 +43,12 @@ export default function Page() {
             />
           </figure>
         </div>
-      </header>
-
-      <hr className="rule wrap" style={{ border: 0, borderTop: "1px solid var(--hair)" }} />
-
-      {/* STATEMENT */}
-      <section className="statement wrap">
-        <Reveal as="div" className="grid">
-          <span className="label">The through-line</span>
-          <p>
-            I help people become the{" "}
-            <span className="accent">obvious choice</span>.
-          </p>
-        </Reveal>
       </section>
 
       {/* ROUTER */}
       <Reveal className="router wrap" id="work-with">
         <div className="head">
-          <h2>Find the right fit.</h2>
+          <h2>Work With Me</h2>
           <span className="label">Five ways in&nbsp;&nbsp;&rarr;</span>
         </div>
         <div className="cards">
