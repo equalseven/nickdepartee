@@ -64,6 +64,7 @@
     max-width:24ch; font-size:clamp(19px,2.3vw,28px); font-weight:700;
     letter-spacing:-.02em; line-height:1.12;
   }
+  .intro .bio{ margin-top:clamp(16px,3vh,26px); max-width:46ch; font-size:clamp(15px,1.55vw,18px); line-height:1.6; color:var(--muted); }
   .intro .meta{ margin-top:clamp(18px,3vh,30px); display:flex; flex-wrap:wrap; gap:18px 42px; }
   .intro .meta div span{ display:block; }
   .intro .meta .v{ font-size:15px; font-weight:600; margin-top:6px; }
@@ -76,6 +77,16 @@
   }
   .hero-statement .accent{ font-weight:700; }
   .intro{ padding-block:clamp(40px,7vh,84px); border-top:1px solid var(--hair); }
+
+  /* ---- CLIENT / LOGO WALL ---- */
+  .clients{ padding-block:clamp(36px,6vh,72px); }
+  .clients > .label{ display:block; margin-bottom:26px; }
+  .clients-grid{ display:grid; grid-template-columns:repeat(2,1fr); border-top:1px solid var(--hair); border-left:1px solid var(--hair); }
+  @media(min-width:640px){ .clients-grid{ grid-template-columns:repeat(3,1fr); } }
+  @media(min-width:900px){ .clients-grid{ grid-template-columns:repeat(6,1fr); } }
+  .client{ display:flex; align-items:center; justify-content:center; text-align:center; min-height:88px; padding:18px 14px; border-right:1px solid var(--hair); border-bottom:1px solid var(--hair); font-size:clamp(13px,1.4vw,16px); font-weight:600; letter-spacing:-.01em; color:var(--muted); transition:.2s; }
+  .client:hover{ color:var(--ink); }
+  .client-logo{ max-height:34px; max-width:100%; width:auto; object-fit:contain; }
 
   /* ---- ROUTER ---- */
   .router{ padding-block:clamp(30px,5vh,56px); }

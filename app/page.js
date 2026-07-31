@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Reveal from "../components/Reveal";
-import { ventures, wildCard, acts, profiles } from "../lib/data";
+import { ventures, wildCard, acts, clients, profiles } from "../lib/data";
 
 export default function Page() {
   return (
@@ -32,6 +32,7 @@ export default function Page() {
               <span className="title">Creative Director &amp; Brand Consultant</span>
             </h1>
             <p className="thesis">Brand and creative direction for people who win on trust.</p>
+            <p className="bio">I&apos;ve spent over two decades in the creative world — a touring guitarist and songwriter turned designer and creative director. That path runs from album covers and stage design to branding for artists, law firms, churches, and small businesses across the country.</p>
           </div>
           <figure className="hero-photo">
             <Image
@@ -42,6 +43,22 @@ export default function Page() {
               priority
             />
           </figure>
+        </div>
+      </section>
+
+      {/* CLIENT / LOGO WALL */}
+      <section className="clients wrap">
+        <span className="label">Selected work with</span>
+        <div className="clients-grid">
+          {clients.map((c) => (
+            <span className="client" key={c.name}>
+              {c.logo ? (
+                <img src={c.logo} alt={c.name} className="client-logo" />
+              ) : (
+                c.name
+              )}
+            </span>
+          ))}
         </div>
       </section>
 
