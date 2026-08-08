@@ -1,5 +1,5 @@
 import "./globals.css";
-import { profiles } from "../lib/data";
+import { profiles, ventures } from "../lib/data";
 
 const SITE = "https://nickdepartee.com";
 
@@ -30,7 +30,7 @@ const personSchema = {
     "Creative director and brand consultant with two decades in music and entertainment, building brand and design for trust-driven businesses.",
   url: SITE,
   address: { "@type": "PostalAddress", addressRegion: "TN", addressCountry: "US" },
-  sameAs: [profiles.linkedin, ...profiles.ventures],
+  sameAs: [profiles.linkedin, ...ventures.map((v) => v.href)],
 };
 
 export default function RootLayout({ children }) {

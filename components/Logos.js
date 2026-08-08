@@ -1,5 +1,4 @@
-// Brand wordmarks as inline SVG so they inherit currentColor (ink -> accent on hover).
-// Ported from the source SVGs; edit these files to swap a mark later.
+// Brand wordmarks as inline SVG (inherit currentColor).
 
 export function EqualSevenMark({ className }) {
   return (
